@@ -22,8 +22,8 @@ title: A Mathemagical Adventure Through Foundations of Mathematics and Pre-calcu
 email: jhong@sd38.bc.ca
 description: >- # this means to ignore newlines until "baseurl:"
   For Mr.Hong's class at Hugh McRoberts Secondary School. 2023-2024.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/FMP10" # the subpath of your site, e.g. /blog
+url: "mr-j-hong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
