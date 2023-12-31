@@ -28,7 +28,7 @@ url: "http://mr-j-hong.github.io" # the base hostname & protocol for your site, 
 github_username:  mr-j-hong
 
 # Build settings
-theme: hitchens-theme
+remote_theme: patdryburgh/hitchens
 plugins:
   - jekyll-feed
   - jekyll-sitemap
