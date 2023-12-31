@@ -1,0 +1,21 @@
+.site-masthead {
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    max-width: 42em;
+    margin: 0 auto;
+  }
+  
+  .site-masthead h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    margin-top: 1em;
+    padding: 0 2rem;
+  }
+  
+  .site-masthead h2 {
+    color: $muted-text-color;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 2rem;
+  }
