@@ -1,0 +1,76 @@
+.post {
+    background: white;
+    margin: 2em auto;
+    max-width: 60rem;
+    padding: 1em 0;
+    box-shadow: 12px 18px 24px rgba(darken($brand-color, 50%), .1);
+}
+
+.post > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+  padding: 0 0.5em;
+}
+
+.post > h1 {
+  font-size: 2em;
+  max-width: 48rem;
+  padding: 1em 1em;
+  text-align: center;
+}
+
+.post p {
+  text-align: justify;
+  text-indent: 1.3em;
+  text-justify: inter-word;
+}
+
+.post p:first-of-type,
+.post h2 + p {
+  text-indent: 0;
+}
+
+.post a:hover {
+  background: $highlight;
+}
+
+.post dl,
+.post ul,
+.post ol {
+  margin: 1em;
+  margin-top: 0;
+}
+
+.post li {
+  margin-left: 0.5rem;
+}
+
+.post-content:first-child {
+  margin-top: 3em;
+}
+
+.secret p {
+  visibility: hidden;
+  opacity: 0%;
+}
+
+.secret:hover p {
+  visibility: visible;
+  opacity: 100%;
+  transition: opacity 2s;
+}
+
+.post-meta {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  text-align: right;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: .75em;
+  padding: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}

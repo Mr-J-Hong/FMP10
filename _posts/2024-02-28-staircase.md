@@ -1,8 +1,6 @@
 ---
 layout: page
-title:  "1.3 Taxes"
-date:   "2023-02-01"
-categories: M1
+title:  "4. Climbing Stairs"
 ---
 Sir C
 
