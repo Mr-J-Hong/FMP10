@@ -10,7 +10,7 @@ When you are ready, hover over the box to reveal the secret.
 
 <br>
 
-<div style="border: dashed 1px black; width:500px; margin: 0 auto; padding:1em">
+<div style="border: dashed 1px black; width:75%; margin: 0 auto; padding:1em">
   <span class="secret">
     <p style="text-align:center;">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget suscipit augue, et rhoncus leo.
