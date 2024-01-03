@@ -15,13 +15,20 @@ layout: default
         {{ site.title }}
       </h1>
     {% endif %}
-    {% if site.title %}
-      <h2>
-        {{ site.description }}
-      </h2>
-    {% endif %}
   </header>
 {% endif %}
+
+<div class="secret">
+  <p style="text-align:center;">
+    You have uncovered the secret text that will reveal the key to <em>awesome
+    mathemagical powers</em>. However, to grasp its true meaning, 
+    you must first collect the <em>12 mathemagical gems</em>.
+  </p>
+  <br>
+  <p style="text-align:center;">
+    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget suscipit augue, et rhoncus leo.</strong>
+  </p>
+</div> 
 
 <main class="home" id="main" role="main" aria-label="Content">
 
@@ -29,14 +36,14 @@ layout: default
     {% if site.paginate and site.paginate_path and paginator.page > 1 %}
       Page {{ paginator.page }}
     {% else %}
-      Contents
+      Gem Quests
     {% endif %}
   </h1>
 
   {% if site.paginate and site.paginate_path %}
     
     <ul class="post-list">
-      {% for post in paginator.posts %}
+      {% for post in paginator.posts reversed %}
         {% include post-list-item.html %}
       {% endfor %}
     </ul>
@@ -62,7 +69,7 @@ layout: default
   {% else %}
 
     <ul class="post-list">
-      {% for post in site.posts %}
+      {% for post in site.posts reversed %}
         {% include post-list-item.html %}
       {% endfor %}
     </ul>
