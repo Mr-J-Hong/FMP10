@@ -3,6 +3,8 @@ layout: page
 title:  1. Divisors and Taxes
 ---
 
+
+
 Congratulations! You've earned your first mathemagical gem!
 <br/><br/>
 
