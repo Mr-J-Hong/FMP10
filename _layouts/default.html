@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   <head>
-    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,10 +16,22 @@
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
       {%- include google-analytics.html -%}
     {%- endif -%}
+
     {% if page.mathjax %}
       {% include mathjax.html %}
     {% endif %}
-    
+
+    {% if layout.custom_js %}
+      {% for js_file in layout.custom_js %}
+        <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js" async></script>
+      {% endfor %}
+    {% endif %}
+
+    {% if page.custom_js %}
+    {% for js_file in page.custom_js %}
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js" async></script>
+    {% endfor %}
+  {% endif %}
   </head>
   <body>
     {% if site.data.menu %}
