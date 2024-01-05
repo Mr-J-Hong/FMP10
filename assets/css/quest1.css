@@ -28,6 +28,7 @@
     font-size: small;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
+    vertical-align: middle;
 }
 
 .messages #total {
