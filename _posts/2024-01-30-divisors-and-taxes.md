@@ -9,7 +9,7 @@ desmos_link: https://www.desmos.com/calculator/49qyn3c7xg
 
 You see the first gem in a vending machine and it looks like it only costs 50 magic coins!
 
-Luckily for you, the coins you need are also just lying about in 12 piles. The first pile has 1 coin, the second pile has 2 coins, and so on. There are definitely enough coins in total, but it looks like every time you take a pile of coins, other piles are [taxed](https://constitutioncenter.org/blog/benjamin-franklins-last-great-quote-and-the-constitution)!
+Luckily for you, the coins you need are also just lying about in 12 piles. The first pile has 1 coin, the second pile has 2 coins, and so on. There are definitely enough coins in total, but it looks like every time you take a pile of coins, other piles are [taxed](https://constitutioncenter.org/blog/benjamin-franklins-last-great-quote-and-the-constitution){:target="_blank"}!
 
 Can you work out how these magic coins are taxed and how you can claim the total of 50 coins needed to get the mathemagical gem?
 
