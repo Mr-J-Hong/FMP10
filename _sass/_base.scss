@@ -144,14 +144,19 @@ figcaption {
 .secret {
   border: dashed 2px black;
   background-color: transparent;
+  color: white;
   max-width: 24em;
   margin: 2em auto; 
   padding: 1em;
   transition: background-color 1s linear;
 }
 
+.secret em {
+  color: white;
+}
+
 .secret:hover {
-  background-color: white;
+  background-color: #1b3c1f;
   transition: background-color 1s linear;
 }
 
