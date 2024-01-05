@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     
     <title>{{ site.title }}{% if page.title and page.title != "" %} &mdash; {{ page.title }}{% endif %}</title>
 
@@ -21,17 +24,23 @@
       {% include mathjax.html %}
     {% endif %}
 
-    {% if layout.custom_js %}
-      {% for js_file in layout.custom_js %}
-        <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js" async></script>
+    {% if layout.js_modules %}
+      {% for mjs_file in layout.js_modules %}
+        <script type="module" src="{{ site.baseurl }}/assets/js/{{ mjs_file }}.mjs"></script>
       {% endfor %}
     {% endif %}
 
     {% if page.custom_js %}
-    {% for js_file in page.custom_js %}
-      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js" async></script>
-    {% endfor %}
-  {% endif %}
+      {% for js_file in page.custom_js %}
+        <script type="module" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js" async></script>
+      {% endfor %}
+    {% endif %}
+
+    {% if page.custom_css %}
+      {% for css_file in page.custom_css %}
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ css_file }}.css">
+      {% endfor %}
+    {% endif %}
   </head>
   <body>
     {% if site.data.menu %}

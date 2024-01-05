@@ -3,7 +3,6 @@ body {
   color: $text-color;
   font-family: $font-family;
   font-size: 1.2em;
-  // line-height: 1.5;
 }
   
 h1 {
@@ -98,8 +97,8 @@ hr {
 img {
   display: flex;
   max-width: 100%;
-  height: auto;
-  margin: 2em auto;
+  // height: auto;
+  // margin: 2em auto;
 }
 
 figure img {

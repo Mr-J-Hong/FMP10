@@ -1,0 +1,37 @@
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 33px);
+    max-width: 80%;
+    margin: 1em auto 1em;
+}
+
+.buttons button {
+    width: 100%;
+}
+
+#reset {
+    display: block;
+    margin: auto;
+}
+
+.messages{
+    display: flex;
+    justify-items: center;
+    margin: 0 auto 1em;
+    justify-content: space-between;
+}
+
+.messages span {
+    border: solid thin black;
+    padding: 2px 1em 2px;
+    font-size: small;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+.messages #total {
+    font-weight: bold;
+    flex: 0 0 75px;
+    min-width: 75px;
+}
