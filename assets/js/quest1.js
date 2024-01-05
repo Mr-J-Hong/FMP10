@@ -1,4 +1,5 @@
 import { flashFeedback } from "./quest_common.mjs";
+import {createCookie, readCookie} from "./cookies.mjs";
 
 const gem_wrapper = document.getElementById("gem-wrapper");
 const reset_button = document.getElementById("reset");
@@ -8,6 +9,10 @@ const msg = document.getElementById("msg");
 
 const factors = [[], [1], [1], [1,2], [1], [1,2,3], [1], [1,2,4], [1,3], [1,2,5], [1], [1,2,3,4,6]];
 var total = 0;
+
+if (readCookie('quest1') == 'solved') {
+    gem_wrapper.style.display = "grid";
+}
 
 reset_button.addEventListener("click", resetButtons);
 
@@ -41,6 +46,9 @@ function handleCoinButtonClick(event) {
     if (total == 50) {
         tot_msg.style.background = "#fdfd96";
         gem_wrapper.style.display = "grid";
+        if (readCookie('cookie-notice-option') == "true") {
+            createCookie("quest1", "solved", 120);
+        }
     }
 }
 

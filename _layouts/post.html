@@ -1,6 +1,8 @@
 ---
 layout: default
-cookies: true
+js_modules:
+ - cookies
+ - quest_common
 ---
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting" id="main" role="article" aria-label="Content">
@@ -27,3 +29,5 @@ cookies: true
   {% endif %}
 
 </article>
+
+{% include cookie-consent.html %}

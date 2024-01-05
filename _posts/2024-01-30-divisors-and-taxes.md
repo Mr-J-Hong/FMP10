@@ -5,7 +5,6 @@ custom_js: quest1
 custom_css: quest1
 gem_img: testgem.png
 desmos_link: https://www.desmos.com/calculator/49qyn3c7xg
-cookies: true
 ---
 
 You see the first gem in a vending machine and it looks like it only costs 50 magic coins!

@@ -25,14 +25,14 @@
     {% endif %}
 
     {% if layout.js_modules %}
-      {% for js_file in layout.js_modules %}
-        <script type="module" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
+      {% for mjs_file in layout.js_modules %}
+        <script type="module" src="{{ site.baseurl }}/assets/js/{{ mjs_file }}.mjs"></script>
       {% endfor %}
     {% endif %}
 
     {% if page.custom_js %}
       {% for js_file in page.custom_js %}
-        <script type="module" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js" async></script>
+        <script type="module" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
       {% endfor %}
     {% endif %}
 
@@ -65,9 +65,5 @@
         </p>
       </aside>
     {% endunless %}
-
-    {%if page.cookies %}
-      {% include cookieconsent.html %}
-    {% endif %}
   </body>
 </html>
