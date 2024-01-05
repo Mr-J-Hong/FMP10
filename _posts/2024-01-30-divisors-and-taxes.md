@@ -14,7 +14,7 @@ Luckily for you, the coins you need are also just lying about in 12 piles. The f
 Can you work out how these magic coins are taxed and how you can claim the total of 50 coins needed to get the mathemagical gem?
 
 <div>
-    <div class="buttons">
+    <div class="buttons noselect">
         <button id="b1">1</button>
         <button id="b2">2</button>
         <button id="b3">3</button>
