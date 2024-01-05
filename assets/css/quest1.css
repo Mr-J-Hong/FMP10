@@ -24,12 +24,13 @@
 }
 
 .messages span {
+    display: inline-flex;
     border: solid thin black;
-    padding: 2px 1em 2px;
+    padding: 2px 0.8em 2px;
     font-size: small;
     font-family: 'Roboto Mono', monospace;
+    align-items: center;
     text-align: center;
-    vertical-align: middle;
 }
 
 .messages #total {
