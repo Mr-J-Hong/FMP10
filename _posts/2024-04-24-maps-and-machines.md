@@ -1,4 +1,4 @@
 ---
 layout: page
-title: 7. Maps and Machines
+title: 7. Mystery Machine
 ---

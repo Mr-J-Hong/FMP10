@@ -6,8 +6,8 @@ export function flashFeedback(elem, msg) {
     }, 300);
 }
 
-export function flashBackground(elem) {
-    elem.style.background = "#fdfd96";
+export function flashError(elem) {
+    elem.style.background = "#ffcccc";
     setTimeout(() => {
         elem.style.background = "transparent"; 
     }, 300);

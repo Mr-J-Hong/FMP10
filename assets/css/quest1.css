@@ -1,7 +1,7 @@
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 33px);
+    grid-template-rows: repeat(3, 36px);
     max-width: 80%;
     margin: 1em auto 1em;
 }
@@ -11,20 +11,18 @@
     user-select: none;
 }
 
-#reset {
+/* .reset {
     display: block;
     margin: auto;
+} */
+
+.controls{
+    display: flex;
+    column-gap: 6px;
+    justify-content: center;
 }
 
-.messages{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    margin: 0 auto 1em;
-}
-
-.messages span {
-    display: inline-flex;
+.controls span {
     border: solid thin black;
     padding: 2px 0.8em 2px;
     font-size: small;
@@ -33,8 +31,16 @@
     text-align: center;
 }
 
-.messages #total {
+.controls .total {
     font-weight: bold;
-    flex: 0 0 120px;
     min-width: 120px;
+}
+
+#puzzle2 {
+    display: none;
+    margin-top: 3em;
+}
+
+#puzzle2 .buttons {
+    grid-template-rows: repeat(6, 36px);
 }
