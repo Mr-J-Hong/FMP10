@@ -47,6 +47,7 @@ function resetButtons() {
     total = 0;
     tot_msg1.style.background = "transparent";
     tot_msg1.innerHTML = "Total Power: 0";
+    pwr_req1.style.background = "transparent";
 }
 
 function resetButtons2() {
@@ -56,6 +57,8 @@ function resetButtons2() {
     total2 = 0;
     tot_msg2.style.background = "transparent";
     tot_msg2.innerHTML = "Total Power: 0";
+    pwr_req2.style.background = "transparent";
+    pwr_req2.innerHTML = "Not enough power"
 }
 
 function handleCoinButtonClick(event) {
@@ -77,7 +80,7 @@ function handleCoinButtonClick(event) {
         tot_msg1.background = "#fdfd96";
         puzzle2.style.display = "block";
         puzzle2.scrollIntoView();
-        if (readCookie('cookie-notice-option') == "true") {
+        if (readCookie('cookie-notice-option') == "true" && readCookie('quest1') != "solved_part_2") {
             createCookie("quest1", "solved_part_1", 120);
         }
     }
