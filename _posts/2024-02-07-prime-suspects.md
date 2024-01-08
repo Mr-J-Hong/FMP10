@@ -26,7 +26,6 @@ The elevators have just finished their 100th run of the day, and they are fillin
     </div>
     <div class="instructions-wrapper">
         <div class="instructions legend">
-            <span>Legend:</span>
             <button class="top" disabled="true">Top</button>
             <button class="bot" disabled="true">Bottom</button>
         </div>

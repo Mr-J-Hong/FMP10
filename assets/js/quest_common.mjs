@@ -12,3 +12,7 @@ export function flashError(elem) {
         elem.style.background = "transparent"; 
     }, 300);
 }
+
+export function showCorrect(elem) {
+    elem.style.background = "#88ff88";
+}

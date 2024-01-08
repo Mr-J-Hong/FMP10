@@ -1,4 +1,4 @@
-import { flashError } from "./quest_common.mjs";
+import { flashError, showCorrect } from "./quest_common.mjs";
 import {createCookie, readCookie} from "./cookies.mjs";
 
 const exbtns = document.querySelectorAll("#exbtns button");
@@ -66,12 +66,13 @@ function checkElevators() {
     let nWrong = 0;
     for (let i=0; i<100; i++) {
         const loc = elevators[i].className;
-        if ((squares.has(i+1) || loc == "bot") && (!squares.has(i+1) || loc == "top")){
+        if ((squares.has(i+1) && loc == "top") || (!squares.has(i+1) && loc == "bot")){
             nWrong += 1;
         }
     }
     if (nWrong == 0) {
         elevator_feedback.innerHTML = "Great job! You've got all of them."
+        showCorrect(elevator_feedback);
         const part2 = document.getElementById("part2");
         part2.style.display = "block";
 
@@ -82,6 +83,9 @@ function checkElevators() {
             }
         }
 
+    } else if (nWrong == 1) {
+        elevator_feedback.innerHTML = nWrong + " elevator is not in the correct position.";
+        flashError(elevator_feedback);
     } else {
         elevator_feedback.innerHTML = nWrong + " elevators are not in the correct position.";
         flashError(elevator_feedback);

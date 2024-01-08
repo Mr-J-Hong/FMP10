@@ -1,4 +1,4 @@
-import { flashError } from "./quest_common.mjs";
+import { flashError, showCorrect } from "./quest_common.mjs";
 import {createCookie, readCookie} from "./cookies.mjs";
 
 const gem_wrapper = document.getElementById("gem-wrapper");
@@ -77,8 +77,8 @@ function handleCoinButtonClick(event) {
         tot_msg1.innerHTML = "Total Power: " + total;
 
         if (total == 50) {
-            pwr_req1.style.background = "#fdfd96";
-            tot_msg1.style.background = "#fdfd96";
+            showCorrect(tot_msg1);
+            showCorrect(pwr_req1);
             puzzle2.style.display = "block";
             if (readCookie('quest1') == null) {
                 puzzle2.scrollIntoView();
@@ -107,9 +107,9 @@ function handleCoinButtonClick2(event) {
         tot_msg2.innerHTML = "Total Power: " + total2;
 
         if (total2 >= 168) {
-            tot_msg2.style.background = "#fdfd96";
+            showCorrect(tot_msg2);
+            showCorrect(pwr_req2);
             pwr_req2.innerHTML = "Powered Up!";
-            pwr_req2.style.background = "#fdfd96";
             gem_wrapper.style.display = "grid";
     
             if (readCookie('quest1') != "solved_part_2"){
