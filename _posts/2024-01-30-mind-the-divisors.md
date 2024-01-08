@@ -2,14 +2,16 @@
 layout: page
 title:  1. Mind the Divisors
 custom_js: quest1
-custom_css: quest1
+custom_css: 
+ - quest_common
+ - quest1
 gem_img: gem1.png
 desmos_link: https://www.desmos.com/3d/3c155ae977?invertedColors=true
 ---
 
-According to the kooky [canaries](https://www.smithsonianmag.com/smart-news/story-real-canary-coal-mine-180961570/), the first mathemagical gem can be found in the [deepest mine in the world](https://www.mining-technology.com/features/feature-top-ten-deepest-mines-world-south-africa/?cf-view).
+According to the [canaries](https://www.smithsonianmag.com/smart-news/story-real-canary-coal-mine-180961570/), the first gem can be found in the [deepest mine in the world](https://www.mining-technology.com/features/feature-top-ten-deepest-mines-world-south-africa/?cf-view).
 
-You grab you hardy hard hat and flashy flashlight and head down the mine shaft to investigate (leaving the canaries to enjoy the fresh air at the park of course). Following the trail of magic, you soon find yourself in front of a powered-down portal with a keypad next to it. Can you figure out how the buttons work and activate the portal?
+You grab your hardy hard hat and flashy flashlight and head down the mine shaft to investigate (leaving the canaries to enjoy the fresh air at the park, of course). Following the trail of magic, you soon find yourself in front of a powered-down portal with a keypad next to it. Can you figure out how the buttons work and activate the portal?
 
 <div id="puzzle1" class="puzzle">
     <div class="buttons noselect">
@@ -26,9 +28,9 @@ You grab you hardy hard hat and flashy flashlight and head down the mine shaft t
         <button>11</button>
         <button>12</button>
     </div>
-    <div class="controls">
-        <span id="total1" class="feedback total">Total Power: 0</span>
-        <span id="power_required1" class="feedback">Power Required: 50</span>
+    <div class="messages">
+        <span id="total1" class="instructions total">Total Power: 0</span>
+        <span id="power_required1" class="instructions">Power Required: 50</span>
         <button id="reset1" class="reset">Reset</button>
     </div>
 
@@ -62,11 +64,9 @@ Great job! You've activated the portal. Stepping through, you find a big box wit
         <button>23</button>
         <button>24</button>
     </div>
-    <div class="controls">
-        <span id="total2" class="feedback total">Total Power: 0</span>
-        <span id="power_required2" class="feedback">Not enough power</span>
+    <div class="messages">
+        <span id="total2" class="instructions total">Total Power: 0</span>
+        <span id="power_required2" class="instructions">Not enough power</span>
         <button id="reset2" class="reset">Reset</button>
     </div>
 </div>
-
-{% include gem.html %}

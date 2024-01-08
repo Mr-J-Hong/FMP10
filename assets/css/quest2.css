@@ -1,0 +1,49 @@
+#gem-wrapper {
+    display: grid;
+}
+
+#part2 {
+    display: none;
+}
+
+#elevators {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    font-family: 'Roboto Mono', monospace;
+    font-size: small;
+    margin: 0 auto 0;
+}
+
+#elevators button {
+    height: 24px;
+}
+
+button.top {
+    background-color: skyblue;
+    color: black;
+}
+
+button.bot {
+    background-color: black;
+    color: white;
+}
+
+.instructions-wrapper {
+    display: flex;
+    justify-content: right;
+}
+
+.messages {
+    display: flex;
+    column-gap: 3px;
+    margin: 1em auto 1em;
+}
+
+#check-elevators {
+    margin-left: auto;
+}
+
+#elevator-feedback {
+    margin: auto;
+}

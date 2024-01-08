@@ -14,14 +14,6 @@ const buttons2 = document.querySelectorAll("#puzzle2 .buttons button");
 const tot_msg2 = document.getElementById("total2");
 const pwr_req2 = document.getElementById("power_required2");
 
-let factors = []
-for (let n = 1; n <= 24; n++) {
-    factors.push(Array.from({length:n-1}, (v, i) => i+1).filter(function f(i) { return n%i == 0}));
-}
-
-var total = 0;
-var total2 = 0;
-
 reset_button1.addEventListener("click", resetButtons);
 buttons1.forEach((currentValue, currentIndex, listObj) => {
     currentValue.addEventListener("click", handleCoinButtonClick);
@@ -39,6 +31,13 @@ if (readCookie('quest1') == 'solved_part_1') {
     gem_wrapper.style.display = "grid";
 }
 
+let factors = []
+for (let n = 1; n <= 24; n++) {
+    factors.push(Array.from({length:n-1}, (v, i) => i+1).filter(function f(i) { return n%i == 0}));
+}
+
+var total = 0;
+var total2 = 0;
 
 function resetButtons() {
     buttons1.forEach((currentValue, currentIndex, listObj) => {
@@ -64,24 +63,29 @@ function resetButtons2() {
 function handleCoinButtonClick(event) {
     const proper_factors = factors[event.target.innerText-1];
     if (proper_factors.every((n) => buttons1[n-1].disabled)) {
-        flashError(tot_msg1);
+        if (total < 50) {
+            flashError(tot_msg1);
+            flashError(pwr_req1);
+        }
     } else {
         total += Number(event.currentTarget.innerText); 
         event.target.disabled = true;
         factors[event.target.innerText-1].forEach((item, index) => {
             buttons1[item-1].disabled = true;
         });
-    }
 
-    tot_msg1.innerHTML = "Total Power: " + total;
+        tot_msg1.innerHTML = "Total Power: " + total;
 
-    if (total == 50) {
-        pwr_req1.style.background = "#fdfd96";
-        tot_msg1.background = "#fdfd96";
-        puzzle2.style.display = "block";
-        puzzle2.scrollIntoView();
-        if (readCookie('cookie-notice-option') == "true" && readCookie('quest1') != "solved_part_2") {
-            createCookie("quest1", "solved_part_1", 120);
+        if (total == 50) {
+            pwr_req1.style.background = "#fdfd96";
+            tot_msg1.style.background = "#fdfd96";
+            puzzle2.style.display = "block";
+            if (readCookie('quest1') == null) {
+                puzzle2.scrollIntoView();
+                if (readCookie('cookie-notice-option') == "true") {
+                    createCookie("quest1", "solved_part_1", 120);
+                }
+            }
         }
     }
 }
@@ -89,26 +93,31 @@ function handleCoinButtonClick(event) {
 function handleCoinButtonClick2(event) {
     const proper_factors = factors[event.target.innerText-1];
     if (proper_factors.every((n) => buttons2[n-1].disabled)) {
-        flashError(tot_msg2);
-        flashError(pwr_req2);
+        if (total2 < 168) {
+            flashError(tot_msg2);
+            flashError(pwr_req2);
+        }
     } else {
         total2 += Number(event.currentTarget.innerText); 
         event.target.disabled = true;
         factors[event.target.innerText-1].forEach((item, index) => {
             buttons2[item-1].disabled = true;
         });
-    }
 
-    tot_msg2.innerHTML = "Total Power: " + total2;
+        tot_msg2.innerHTML = "Total Power: " + total2;
 
-    if (total2 >= 168) {
-        tot_msg2.style.background = "#fdfd96";
-        pwr_req2.innerHTML = "Powered Up!";
-        pwr_req2.style.background = "#fdfd96";
-        gem_wrapper.style.display = "grid";
-        gem_wrapper.scrollIntoView();
-        if (readCookie('cookie-notice-option') == "true") {
-            createCookie("quest1", "solved_part_2", 120);
+        if (total2 >= 168) {
+            tot_msg2.style.background = "#fdfd96";
+            pwr_req2.innerHTML = "Powered Up!";
+            pwr_req2.style.background = "#fdfd96";
+            gem_wrapper.style.display = "grid";
+    
+            if (readCookie('quest1') != "solved_part_2"){
+                gem_wrapper.scrollIntoView();
+            }
+            if (readCookie('cookie-notice-option') == "true") {
+                createCookie("quest1", "solved_part_2", 120);
+            }
         }
     }
 }

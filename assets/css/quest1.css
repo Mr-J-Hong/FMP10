@@ -8,32 +8,24 @@
 
 .buttons button {
     width: 100%;
-    user-select: none;
 }
 
-/* .reset {
-    display: block;
-    margin: auto;
-} */
-
-.controls{
+.messages{
     display: flex;
     column-gap: 6px;
     justify-content: center;
 }
 
-.controls span {
+.messages span {
     border: solid thin black;
     padding: 2px 0.8em 2px;
     font-size: small;
     font-family: 'Roboto Mono', monospace;
-    align-items: center;
     text-align: center;
 }
 
-.controls .total {
+.total {
     font-weight: bold;
-    min-width: 120px;
 }
 
 #puzzle2 {

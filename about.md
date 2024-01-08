@@ -12,4 +12,6 @@ You can enable cookies to save your progress on your device for 120 days. The co
 <br><br>
 You can also save your answers somewhere else and simply re-enter them when you want to see the gems again.
 <br><br>
+This project is open source. [You can help improve it](https://github.com/Mr-J-Hong/FMP10).
+<br><br>
 Have fun!

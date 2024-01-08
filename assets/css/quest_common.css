@@ -1,0 +1,10 @@
+.instructions {
+    transition: background-color 0.3s ease-in-out; 
+    max-width: fit-content;
+    border: solid thin black;
+    padding: 3px 0.8em 3px;
+    font-size: small;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+

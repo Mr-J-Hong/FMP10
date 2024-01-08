@@ -39,15 +39,15 @@
     }
 
     document.getElementById('cookie-notice-accept').addEventListener("click",function() {
-        createCookie('cookie-notice-option','true', 14);
+        createCookie('cookie-notice-option','true', 120);
         document.getElementById('cookie-notice').style.display = 'none';
-        location.reload();
+        // location.reload();
     });
 
     document.getElementById('cookie-notice-deny').addEventListener("click",function() {
-        createCookie('cookie-notice-option','false', 14);
+        createCookie('cookie-notice-option','false', 120);
         document.getElementById('cookie-notice').style.display = 'none';
-        location.reload();
+        // location.reload();
     });
 
 </script>

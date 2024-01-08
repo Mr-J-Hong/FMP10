@@ -68,11 +68,6 @@
   margin-top: 2em;
 }
 
-.feedback {
-  transition: background-color 0.3s ease-in-out; 
-  max-width: fit-content;
-}
-
 #gem-wrapper {
   display: none;
   justify-items: center;
@@ -85,9 +80,13 @@
 
 .gem-msg {
   display: block;
-  max-width: 80%;
+  max-width: 60%;
   margin: 0 auto 2em;
   text-align: center;
+  color: white;
+}
+
+.gem-msg em {
   color: white;
 }
 
