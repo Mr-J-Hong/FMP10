@@ -8,3 +8,9 @@
     text-align: center;
 }
 
+.number-input {
+    display: flex;
+    justify-content: right;
+    column-gap: 6px;
+    margin: 1em auto 1em;
+}
