@@ -14,6 +14,13 @@ const buttons2 = document.querySelectorAll("#puzzle2 .buttons button");
 const tot_msg2 = document.getElementById("total2");
 const pwr_req2 = document.getElementById("power_required2");
 
+if (readCookie('quest1') == 'solved_part_1') {
+    puzzle2.style.display = "block";
+} else if (readCookie('quest1') == 'solved_part_2') {
+    puzzle2.style.display = "block";
+    gem_wrapper.style.display = "grid";
+}
+
 reset_button1.addEventListener("click", resetButtons);
 buttons1.forEach((currentValue, currentIndex, listObj) => {
     currentValue.addEventListener("click", handleCoinButtonClick);
@@ -23,13 +30,6 @@ reset_button2.addEventListener("click", resetButtons2);
 buttons2.forEach((currentValue, currentIndex, listObj) => {
     currentValue.addEventListener("click", handleCoinButtonClick2);
 })
-
-if (readCookie('quest1') == 'solved_part_1') {
-    puzzle2.style.display = "block";
-} else if (readCookie('quest1') == 'solved_part_2') {
-    puzzle2.style.display = "block";
-    gem_wrapper.style.display = "grid";
-}
 
 let factors = []
 for (let n = 1; n <= 24; n++) {

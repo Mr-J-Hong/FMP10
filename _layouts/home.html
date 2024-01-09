@@ -18,17 +18,7 @@ layout: default
   </header>
 {% endif %}
 
-<div class="secret">
-  <p style="text-align:center;">
-    You have uncovered the secret text that will reveal the key to <em>awesome
-    mathemagical powers</em>. However, to grasp its true meaning, 
-    you must first collect the <em>12 mathemagical gems</em>.
-  </p>
-  <br>
-  <p style="text-align:center;">
-    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget suscipit augue, et rhoncus leo.</strong>
-  </p>
-</div> 
+{% include secret-message.html %}
 
 <main class="home" id="main" role="main" aria-label="Content">
 
@@ -42,38 +32,34 @@ layout: default
 
   {% if site.paginate and site.paginate_path %}
     
-    <ul class="post-list">
-      {% for post in paginator.posts reversed %}
-        {% include post-list-item.html %}
-      {% endfor %}
-    </ul>
+  <ul class="post-list">
+    {% for post in paginator.posts reversed %}
+      {% include post-list-item.html %}
+    {% endfor %}
+  </ul>
 
-    {% if paginator.total_pages > 1 %}
-
-      <div class="post-pagination">
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path | prepend: site.baseurl  }}" class="pagination-next btn">&lang;&nbsp;Older</a>
-        {% else %}
-          <span>&nbsp;</span>
-        {% endif %}
-        <span class="pagination-number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="pagination-previous btn">Newer&nbsp;&rang;</a>
-        {% else %}
-          <span>&nbsp;</span>
-        {% endif %}
-      </div>
-
-    {% endif %}
+  {% if paginator.total_pages > 1 %}
+    <div class="post-pagination">
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl  }}" class="pagination-next btn">&lang;&nbsp;Older</a>
+      {% else %}
+        <span>&nbsp;</span>
+      {% endif %}
+      <span class="pagination-number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="pagination-previous btn">Newer&nbsp;&rang;</a>
+      {% else %}
+        <span>&nbsp;</span>
+      {% endif %}
+    </div>
+  {% endif %}
 
   {% else %}
-
     <ul class="post-list">
       {% for post in site.posts reversed %}
         {% include post-list-item.html %}
       {% endfor %}
     </ul>
-
   {% endif %}
   
 </main>
