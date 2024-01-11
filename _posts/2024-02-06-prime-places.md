@@ -40,16 +40,16 @@ The elevators have just finished their 100th run. One final run will bring all t
 
 <div id="part2">
 <p>
-You make a mad dash to each of the elevators numbered by a perfect square and just manage to squeeze into the last spot on elevator 100.
+You make a mad dash to each of the elevators numbered by a perfect square and just manage to squeeze into the last spot on the last elevator.
 </p>
 <p>
-After a long, rickety ride, you step out to find a frenetic scene. Apparently, an evil gem hunter has planted bombs on some of the elevators when they were in the depths of the mine. The bombs have been set to explode the next time the elevator goes back down.
+After a long, rickety ride, you step out to find panicked miners rushing toward the exit. Apparently, an evil gem hunter has planted bombs on some of the elevators when they were in the depths of the mine. The bombs have been set to explode the next time the elevator goes back down.
 </p>
 <p>
-Unfortunately, the bomb squad doesn't have enough time to clear all 100 elevators before they head back down in the morning. They need your help to figure out which elevators might have a bomb and which ones are safe.
+The bomb squad has arrived, but unfortunately, there isn't enough time to clear all 100 elevators before they head back down in the morning. Can you figure out which elevators might have a bomb and which ones are safe?
 </p>
 <p>
-You reason that since none of the bombs have gone off yet, the only elevators that could have a bomb on them are the ones that have only gone down once. Also, the bomb squad has already cleared elevator 1 and found bombs on elevators 2 and 3.
+You reason that since none of the bombs have gone off yet, the only elevators that could have a bomb on them are the ones that have only gone down once. Also, the bomb squad has already checked that <strong>elevator 1 is safe</strong> but found bombs on elevators 2 and 3.
 </p>
 <p>
 Can you figure out which elevators might have a bomb, and which ones are safe?
@@ -67,7 +67,7 @@ Can you figure out which elevators might have a bomb, and which ones are safe?
 
 <div id="part2_end">
     <div class="messages">
-        <span id="elevator2-feedback" class="usr-msg">Which elevators could have a bomb?</span>
+        <span id="elevator2-feedback" class="usr-msg">Which elevators, other than 1, only went down once?</span>
         <button id="check-bombs" class="noselect">Check My Answer</button>
     </div>
 </div>
@@ -82,10 +82,10 @@ Walking toward the exit, you see a small note on the floor:
 </p>
 <div class="note">
     <p>
-    The gem was within my reach. I activated the portal, but no matter how hard I tried, I just couldn't get the box open! Well, if I can't have it, then no one can. The bombs I've planted in the elevators when I was down here will explode the next time they go down and collapse the mine. 
+    The gem was within my reach. I activated the portal, but no matter how hard I tried, I just couldn't get the box open! Well, if I can't have it, then no one can. The bombs I've planted in the elevators down here will explode the next time they come back down and collapse the mine. 
     </p>
     <p>
-    I'm done with these gems. If anyone cares, I've left the one already in my possession in the primest locker &mdash; that is, the locker labelled by a prime number such that all the numbers formed by separating its digits are also prime.
+    I'm so done with these gems. If anyone cares, I've left the one already in my possession in the primest locker &mdash; that is, the locker labelled by a prime number such that all the numbers formed by separating its digits are also prime.
     </p>
 </div>
 <p>
@@ -97,7 +97,7 @@ Note:
         <li>All the lockers are labelled by a 3-digit number.</li>
         <li>The locker number is prime. Furthermore, all numbers formed by separating its digits are also prime.</li>
     </ul>
-Examples:
+Non-examples:
 <ul>
     <li>113 &rarr; 1 | 13 &emsp; 11 | 3 &emsp; 1 | 1 | 3</li>
     <li>523 &rarr; 5 | 23 &emsp; 52 | 3 &emsp; 5 | 2 | 3</li>

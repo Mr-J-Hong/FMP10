@@ -100,7 +100,7 @@ function handleElevatorClick2(evt) {
         evt.target.className = "bomb";
     }
     elevator2_feedback.style.background = "transparent";
-    elevator2_feedback.innerHTML = "Which elevators could have a bomb?";
+    elevator2_feedback.innerHTML = "Which elevators, other than 1, only went down once?";
 }
 
 function checkElevators() {
@@ -156,6 +156,7 @@ function checkBombs() {
 }
 
 function checkLocker() {
+    // Well aren't you a smarty pants :P
     if (locker_input.value == "373") {
         gem_wrapper.style.display = "grid";
         showCorrect(locker_input);
