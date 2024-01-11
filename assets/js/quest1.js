@@ -91,9 +91,10 @@ function handleCoinButtonClick(event) {
 }
 
 function handleCoinButtonClick2(event) {
+    const min_score = 173;
     const proper_factors = factors[event.target.innerText-1];
     if (proper_factors.every((n) => buttons2[n-1].disabled)) {
-        if (total2 < 168) {
+        if (total2 < min_score) {
             flashError(tot_msg2);
             flashError(pwr_req2);
         }
@@ -106,7 +107,7 @@ function handleCoinButtonClick2(event) {
 
         tot_msg2.innerHTML = "Total Power: " + total2;
 
-        if (total2 >= 168) {
+        if (total2 >= min_score) {
             showCorrect(tot_msg2);
             showCorrect(pwr_req2);
             pwr_req2.innerHTML = "Powered Up!";

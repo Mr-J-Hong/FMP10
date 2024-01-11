@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  2. Prime Locations
+title:  2. Prime Places
 custom_js: quest2
 custom_css: 
  - quest_common
@@ -15,7 +15,7 @@ There are 100 elevators that run on a rather peculiar schedule, and you need to 
 
 The elevators have just finished their 100th run. One final run will bring all the elevators up to reset for the next day. However, they are filling up fast and you don't have time to check them all. Can you identify all the elevators that are at the bottom of the mine after 100 runs?
 
-<div id="exbtns-wrapper" style="display: flex; margin: 1em 0 3px;">
+<div id="exbtns-wrapper" class="instructions-wrapper">
     <div id="exbtns" style="margin: 0 auto 0;">
         <button id="0" class="noselect">Start</button>
         <button id="1" class="noselect">Run 1</button>
@@ -24,18 +24,16 @@ The elevators have just finished their 100th run. One final run will bring all t
         <button id="4" class="noselect">Run 4</button>
         <button id="5" class="noselect">Run 5</button>
     </div>
-    <div class="instructions-wrapper">
-        <div class="instructions legend">
-            <button class="top" disabled="true">Top</button>
-            <button class="bot" disabled="true">Bottom</button>
-        </div>
+    <div class="usr-msg legend">
+        <button class="top" disabled="true">Top</button>
+        <button class="bot" disabled="true">Bottom</button>
     </div>
 </div>
 <div id="elevators" class="elevators noselect"></div>
 
 <div class="wrapper">
     <div class="messages">
-        <span id="elevator-feedback" class="instructions">Which elevators are at the bottom after 100 runs?</span>
+        <span id="elevator-feedback" class="usr-msg">Which elevators are at the bottom after 100 runs?</span>
         <button id="check-elevators" class="noselect">Check My Answer</button>
     </div>
 </div>
@@ -45,7 +43,7 @@ The elevators have just finished their 100th run. One final run will bring all t
 You make a mad dash to each of the elevators numbered by a perfect square and just manage to squeeze into the last spot on elevator 100.
 </p>
 <p>
-After a long, rickety ride, you step out to find a frenetic scene. Apparently, a frustrated gem hunter has planted bombs on some of the elevators when they were in the depths of the mine. The bombs have been set to explode the next time the elevator goes back down.
+After a long, rickety ride, you step out to find a frenetic scene. Apparently, an evil gem hunter has planted bombs on some of the elevators when they were in the depths of the mine. The bombs have been set to explode the next time the elevator goes back down.
 </p>
 <p>
 Unfortunately, the bomb squad doesn't have enough time to clear all 100 elevators before they head back down in the morning. They need your help to figure out which elevators might have a bomb and which ones are safe.
@@ -58,18 +56,19 @@ Can you figure out which elevators might have a bomb, and which ones are safe?
 </p>
 
 <div class="instructions-wrapper">
-    <div class="instructions legend">
-        <button class="bomb" disabled="true">Bomb</button>
+    <button id="set-all-safe" class="noselect set-bombs">Set All Safe</button>
+    <button id="set-all-bomb" class="noselect set-bombs">Set All Bomb</button>
+    <div class="usr-msg legend">
         <button class="safe" disabled="true">Safe</button>
+        <button class="bomb" disabled="true">Bomb</button>
     </div>
 </div>
 <div id="elevators2" class="elevators noselect"></div>
 
 <div class="wrapper">
-    <div class="messages2">
-        <button id="reset" class="noselect">Reset</button>
-        <span id="elevator2-feedback" class="instructions">Which elevators have a bomb?</span>
-        <button id="check-elevators" class="noselect">Check My Answer</button>
+    <div class="messages">
+        <span id="elevator2-feedback" class="usr-msg">Which elevators could have a bomb?</span>
+        <button id="check-bombs" class="noselect">Check My Answer</button>
     </div>
 </div>
 </div>
@@ -79,7 +78,7 @@ Can you figure out which elevators might have a bomb, and which ones are safe?
 Phew! You manage to help the bomb squad defuse the last bomb just in time.
 </p>
 <p>
-Walking toward the morning sun, you see a small note by the exit:
+Walking toward the exit, you see a small note on the floor:
 </p>
 <div class="note">
     <p>
@@ -93,25 +92,24 @@ Walking toward the morning sun, you see a small note by the exit:
     Can you determine the locker number and retrieve the mathemagical gem?
 </p>
 <br>
-Note: All the lockers are labelled by a 3-digit number.
-<br>
+Note: 
+    <ul>
+        <li>All the lockers are labelled by a 3-digit number.</li>
+        <li>The locker number is prime. Furthermore, all numbers formed by separating its digits are also prime.</li>
+    </ul>
 Examples:
 <ul>
-    <li>127 &rarr; 1 | 27 &emsp; 12 | 7 &emsp; 1 | 2 | 7</li>
-    <li>223 &rarr; 2 | 23 &emsp; 22 | 3 &emsp; 2 | 2 | 3</li>
-    <li>737 &rarr; 7 | 37 &emsp; 73 | 7 &emsp; 7 | 3 | 7</li>
+    <li>113 &rarr; 1 | 13 &emsp; 11 | 3 &emsp; 1 | 1 | 3</li>
+    <li>523 &rarr; 5 | 23 &emsp; 52 | 3 &emsp; 5 | 2 | 3</li>
 </ul>
 <p>
-127 is not the right answer both because 12 is not prime and because 27 is not prime.
+    113 is not the right answer because 1 not prime. 
 </p>
 <p>
-223 is not the right answer because 22 is not prime.
-</p>
-<p>
-737 is not the right answer because 737 is not prime.
+    523 is not the right answer because 52 is not prime.
 </p>
 
 <div class="number-input">
-    <input type="number"><button id="part3-input" class="noselect">Check My Answer</button>
+    <input id="locker-input" type="number"><button id="check-locker" class="noselect">Check My Answer</button>
 </div>
 </div>

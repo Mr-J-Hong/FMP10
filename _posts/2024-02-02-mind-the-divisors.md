@@ -29,8 +29,8 @@ You grab your hardy hard hat and head down to investigate (leaving the canaries 
         <button>12</button>
     </div>
     <div class="messages">
-        <span id="total1" class="instructions total">Total Power: 0</span>
-        <span id="power_required1" class="instructions">Power Required: 50</span>
+        <span id="total1" class="usr-msg total">Total Power: 0</span>
+        <span id="power_required1" class="usr-msg">Power Required: 50</span>
         <button id="reset1" class="reset">Reset</button>
     </div>
 
@@ -65,8 +65,8 @@ Great job! You've activated the portal. Stepping through, you find a big box wit
         <button>24</button>
     </div>
     <div class="messages">
-        <span id="total2" class="instructions total">Total Power: 0</span>
-        <span id="power_required2" class="instructions">Not enough power</span>
+        <span id="total2" class="user-msg total">Total Power: 0</span>
+        <span id="power_required2" class="usr-msg">Not enough power</span>
         <button id="reset2" class="reset">Reset</button>
     </div>
 </div>
