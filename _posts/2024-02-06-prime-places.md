@@ -31,7 +31,7 @@ The elevators have just finished their 100th run. One final run will bring all t
 </div>
 <div id="elevators" class="elevators noselect"></div>
 
-<div class="wrapper">
+<div id="part1-end">
     <div class="messages">
         <span id="elevator-feedback" class="usr-msg">Which elevators are at the bottom after 100 runs?</span>
         <button id="check-elevators" class="noselect">Check My Answer</button>
@@ -65,7 +65,7 @@ Can you figure out which elevators might have a bomb, and which ones are safe?
 </div>
 <div id="elevators2" class="elevators noselect"></div>
 
-<div class="wrapper">
+<div id="part2_end">
     <div class="messages">
         <span id="elevator2-feedback" class="usr-msg">Which elevators could have a bomb?</span>
         <button id="check-bombs" class="noselect">Check My Answer</button>

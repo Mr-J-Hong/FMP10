@@ -28,6 +28,8 @@ const elevator2_feedback = document.getElementById("elevator2-feedback");
 const check_bombs = document.getElementById("check-bombs");
 const check_locker = document.getElementById("check-locker");
 const locker_input = document.getElementById("locker-input");
+const part1_end = document.getElementById("part1-end");
+const part2_end = document.getElementById("part2_end");
 
 let solve_status = readCookie('quest2');
 if (solve_status == 'solved_part_1') {
@@ -115,7 +117,7 @@ function checkElevators() {
         part2.style.display = "block";
 
         if (readCookie("quest2") == null) {
-            part2.scrollIntoView();
+            part1_end.scrollIntoView();
             if (readCookie('cookie-notice-option') == "true") {
                 createCookie("quest2", "solved_part_1", 120);
             }
@@ -145,8 +147,8 @@ function checkBombs() {
     part3.style.display = "grid";
 
     solve_status = readCookie("quest2");
-    if (solve_status == null || solve_status == "solved_part_1") {
-        part3.scrollIntoView();
+    if (solve_status != "solved_part_2" && solve_status != "solved_part_3") {
+        part2_end.scrollIntoView();
         if (readCookie('cookie-notice-option') == "true") {
             createCookie("quest2", "solved_part_2", 120);
         }
@@ -157,7 +159,15 @@ function checkLocker() {
     if (locker_input.value == "373") {
         gem_wrapper.style.display = "grid";
         showCorrect(locker_input);
+        solve_status = readCookie("quest2");
+        if (solve_status != "solved_part_3") {
+            gem_wrapper.scrollIntoView();
+            if (readCookie('cookie-notice-option') == "true") {
+                createCookie("quest2", "solved_part_3", 120);
+            }
+        }
     } else {
         flashError(locker_input);
     }
+
 }

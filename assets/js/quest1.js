@@ -81,7 +81,7 @@ function handleCoinButtonClick(event) {
             showCorrect(pwr_req1);
             puzzle2.style.display = "block";
             if (readCookie('quest1') == null) {
-                puzzle2.scrollIntoView();
+                total1.scrollIntoView();
                 if (readCookie('cookie-notice-option') == "true") {
                     createCookie("quest1", "solved_part_1", 120);
                 }
