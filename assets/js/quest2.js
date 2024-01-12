@@ -156,7 +156,7 @@ function checkBombs() {
 }
 
 function checkLocker() {
-    // Well aren't you a smarty pants :P
+    // Well, well, well, aren't you a smart cookie?
     if (locker_input.value == "373") {
         gem_wrapper.style.display = "grid";
         showCorrect(locker_input);

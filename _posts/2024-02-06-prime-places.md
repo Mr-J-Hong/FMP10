@@ -46,7 +46,7 @@ You make a mad dash to each of the elevators numbered by a perfect square and ju
 After a long, rickety ride, you step out to find panicked miners rushing toward the exit. Apparently, an evil gem hunter has planted bombs on some of the elevators when they were in the depths of the mine. The bombs have been set to explode the next time the elevator goes back down.
 </p>
 <p>
-The bomb squad has arrived, but unfortunately, there isn't enough time to clear all 100 elevators before they head back down in the morning. Can you figure out which elevators might have a bomb and which ones are safe?
+The bomb squad has arrived, but unfortunately, there isn't enough time to clear all 100 elevators before they head back down in the morning.
 </p>
 <p>
 You reason that since none of the bombs have gone off yet, the only elevators that could have a bomb on them are the ones that have only gone down once. Also, the bomb squad has already checked that <strong>elevator 1 is safe</strong> but found bombs on elevators 2 and 3.
