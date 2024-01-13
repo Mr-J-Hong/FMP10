@@ -6,22 +6,10 @@
     margin: 1em auto 1em;
 }
 
-.buttons button {
-    width: 100%;
-}
-
 .messages{
     display: flex;
     column-gap: 6px;
     justify-content: center;
-}
-
-.messages span {
-    border: solid thin black;
-    padding: 2px 0.8em 2px;
-    font-size: small;
-    font-family: 'Roboto Mono', monospace;
-    text-align: center;
 }
 
 .total {

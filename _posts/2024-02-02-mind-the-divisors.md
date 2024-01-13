@@ -65,7 +65,7 @@ Great job! You've activated the portal. Stepping through, you find a big box wit
         <button>24</button>
     </div>
     <div class="messages">
-        <span id="total2" class="user-msg total">Total Power: 0</span>
+        <span id="total2" class="usr-msg total">Total Power: 0</span>
         <span id="power_required2" class="usr-msg">Not enough power</span>
         <button id="reset2" class="reset">Reset</button>
     </div>
