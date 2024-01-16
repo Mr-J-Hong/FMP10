@@ -8,7 +8,8 @@ custom_css:
 gem_img: gem3.png
 desmos_link: https://www.desmos.com/calculator/ejxejkil35?invertedColors=true
 ---
-
- - List Item 1
- - List Item 2
- - List Item 3
+<ul class="swappable">
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+<ul class="swappable">

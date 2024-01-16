@@ -1,3 +1,7 @@
 #gem-wrapper {
     display: grid;
 }
+
+.swappable {
+    cursor: grab;
+}
