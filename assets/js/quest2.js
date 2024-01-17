@@ -119,7 +119,7 @@ function checkElevators() {
         if (readCookie("quest2") == null) {
             part1_end.scrollIntoView();
             if (readCookie('cookie-notice-option') == "true") {
-                createCookie("quest2", "solved_part_1", 120);
+                createCookie("quest2", "solved_part_1", 365);
             }
         }
 
@@ -150,7 +150,7 @@ function checkBombs() {
     if (solve_status != "solved_part_2" && solve_status != "solved_part_3") {
         part2_end.scrollIntoView();
         if (readCookie('cookie-notice-option') == "true") {
-            createCookie("quest2", "solved_part_2", 120);
+            createCookie("quest2", "solved_part_2", 365);
         }
     }
 }
@@ -164,7 +164,7 @@ function checkLocker() {
         if (solve_status != "solved_part_3") {
             gem_wrapper.scrollIntoView();
             if (readCookie('cookie-notice-option') == "true") {
-                createCookie("quest2", "solved_part_3", 120);
+                createCookie("quest2", "solved_part_3", 365);
             }
         }
     } else {

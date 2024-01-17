@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  3. Square
+title:  3. Some Square Sides
 custom_js: quest3
 custom_css:
  - quest_common

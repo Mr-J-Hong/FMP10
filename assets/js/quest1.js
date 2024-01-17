@@ -83,7 +83,7 @@ function handleCoinButtonClick(event) {
             if (readCookie('quest1') == null) {
                 total1.scrollIntoView();
                 if (readCookie('cookie-notice-option') == "true") {
-                    createCookie("quest1", "solved_part_1", 120);
+                    createCookie("quest1", "solved_part_1", 365);
                 }
             }
         }
@@ -117,7 +117,7 @@ function handleCoinButtonClick2(event) {
                 gem_wrapper.scrollIntoView();
             }
             if (readCookie('cookie-notice-option') == "true") {
-                createCookie("quest1", "solved_part_2", 120);
+                createCookie("quest1", "solved_part_2", 365);
             }
         }
     }

@@ -43,7 +43,7 @@ The elevators have just finished their 100th run. One final run will bring all t
 You make a mad dash to each of the elevators numbered by a perfect square and just manage to squeeze into the last spot on the last elevator.
 </p>
 <p>
-After a long, rickety ride, you step out to find panicked miners rushing toward the exit. Apparently, an evil gem hunter has planted bombs on some of the elevators when they were in the depths of the mine. The bombs have been set to explode the next time the elevator goes back down.
+After a long, rickety ride, you step out to find panicked miners rushing toward the exit. Apparently, an evil gem hunter has planted bombs on some of the elevators when they were at the bottom of the mine. The bombs have been set to explode the next time the elevator goes back down.
 </p>
 <p>
 The bomb squad has arrived, but unfortunately, there isn't enough time to clear all 100 elevators before they head back down in the morning.

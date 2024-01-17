@@ -30,22 +30,19 @@
         }
         return null;
     }
-    function eraseCookie(name) {
-        createCookie(name,"",-1);
-    }
 
     if (readCookie('cookie-notice-option') == null) {
         document.getElementById('cookie-notice').style.display = 'block';
     }
 
     document.getElementById('cookie-notice-accept').addEventListener("click",function() {
-        createCookie('cookie-notice-option','true', 120);
+        createCookie('cookie-notice-option','true', 365);
         document.getElementById('cookie-notice').style.display = 'none';
         // location.reload();
     });
 
     document.getElementById('cookie-notice-deny').addEventListener("click",function() {
-        createCookie('cookie-notice-option','false', 120);
+        // createCookie('cookie-notice-option','false', 120);
         document.getElementById('cookie-notice').style.display = 'none';
         // location.reload();
     });
