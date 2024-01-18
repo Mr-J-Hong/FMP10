@@ -91,7 +91,7 @@
 }
 
 .gem-link {
-  width: 100%;
+  width: 100% !important;
   display: flex;
   margin: auto;
   justify-content: center;
@@ -102,27 +102,28 @@
   transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
 
-.post .gem-link:hover {
+.gem-link:hover {
   transform: translateY(-3.5%);
   transition: transform 250ms cubic-bezier(.3, .7, .4, 1);
   background-color: black;
 }
 
-.post .gem-link:active {
+.gem-link:active {
   transform: translateY(-1%);
   transition: transform 60ms;
 }
 
-.post .gem-link:focus {
+.gem-link:focus {
   outline: none;
 }
 
 .gem-img {
   object-fit: contain;
   padding: 12%;
-  width: 100%;
+  width: 100% !important;
   border-radius: 12px;
   background-color: black;
+  box-sizing: border-box;
 }
 
 .gradient-border {
