@@ -8,8 +8,14 @@ custom_css:
 gem_img: gem3.png
 desmos_link: https://www.desmos.com/calculator/ejxejkil35?invertedColors=true
 ---
-<ul class="swappable">
-    <li>List Item 1</li>
-    <li>List Item 2</li>
-    <li>List Item 3</li>
-<ul class="swappable">
+<div class="swappable">
+    <div class="block--isDraggable">0</div>
+    <div class="block--isDraggable">4</div>
+    <div class="block--isDraggable">5</div>
+    <div class="block--isDraggable">9</div>
+    <div class="block notDraggable"></div>
+    <div class="block--isDraggable">2</div>
+    <div class="block--isDraggable">7</div>
+    <div class="block--isDraggable">11</div>
+    <div class="block--isDraggable">14</div>
+</div>

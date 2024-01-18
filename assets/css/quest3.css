@@ -4,4 +4,22 @@
 
 .swappable {
     cursor: grab;
+    display: grid;
+    max-width: 240px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid thin black;
+}
+
+.swappable > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid thin black;
+    aspect-ratio: 1;
+    padding: 8px;
+}
+
+.notDraggable {
+    cursor: default;
 }
