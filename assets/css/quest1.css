@@ -6,12 +6,6 @@
     margin: 1em auto 1em;
 }
 
-.messages{
-    display: flex;
-    column-gap: 6px;
-    justify-content: center;
-}
-
 .total {
     font-weight: bold;
 }

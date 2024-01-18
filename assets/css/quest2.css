@@ -33,35 +33,6 @@ button.bot {
     color: white;
 }
 
-.instructions-wrapper {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    column-gap: 6px;
-    margin: 1.2em auto 6px;
-}
-
-.messages {
-    display: grid;
-    grid-template-columns: 1fr fit-content(120px);
-    justify-content: center;
-    column-gap: 3px;
-    margin: 0.6em auto 0.6em;
-}
-
-#check-elevators {
-    margin-left: auto;
-}
-
-#elevator-feedback {
-    margin: auto;
-}
-
-#elevator2-feedback {
-    margin: auto;
-    min-width: 90%;
-}
-
 .bomb {
     background-color: #da0e0e;
     color: white;
@@ -76,6 +47,10 @@ button.bot {
     color: black;
 }
 
+.legend {
+    margin: 0;
+}
+
 .note {
     max-width: 80%;
     border: solid thin black;
@@ -83,3 +58,4 @@ button.bot {
     font-family: 'Caveat', cursive;
     margin: 0.6em auto 0.6em;
 }
+
