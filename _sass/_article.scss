@@ -91,7 +91,7 @@
 }
 
 .gem-link {
-  height: 100%;
+  width: 100%;
   display: flex;
   margin: auto;
   justify-content: center;
@@ -128,7 +128,7 @@
 .gradient-border {
   display: flex;
   margin: auto;
-  max-width: 240px;
+  width: 192px;
   border-radius: 12px;
   background: linear-gradient(
     60deg,
