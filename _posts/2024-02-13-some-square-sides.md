@@ -8,6 +8,7 @@ custom_css:
 gem_img: gem3.png
 desmos_link: https://www.desmos.com/calculator/ejxejkil35?invertedColors=true
 ---
+
 <div id="puzzle1">
     <div class="block--isDraggable">0</div>
     <div class="block--isDraggable">2</div>
@@ -21,3 +22,7 @@ desmos_link: https://www.desmos.com/calculator/ejxejkil35?invertedColors=true
 </div>
 
 <div id="usr-msg1" class="usr-msg">Touching pairs must sum to a square number.</div>
+
+<div id="part2">
+asfsdf  
+</div>

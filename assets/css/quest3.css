@@ -1,5 +1,9 @@
 #gem-wrapper {
-    display: grid;
+    display: none;
+}
+
+#part2 {
+    display: none;
 }
 
 #puzzle1 {
@@ -27,7 +31,7 @@
 
 #submit1 {
     box-sizing: border-box;
-    height: 98%;
+    height: 97%;
     border-radius: 0;
 }
 
