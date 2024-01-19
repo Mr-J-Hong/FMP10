@@ -72,6 +72,11 @@
     margin: 0.6em auto 1.2em;
 }
 
+.audio-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 audio {
     width: 100%;
     display: none;
