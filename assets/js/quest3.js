@@ -39,7 +39,7 @@ if (solve_status == 'solved_part_1') {
 } else if (solve_status == 'solved_part_2') {
     part2.style.display = "block";
     gem_wrapper.style.display = "grid";
-    song.style.display = "inline";
+    song.style.display = "block";
 }
 
 submit1.addEventListener("click", checkPuzzle1);
@@ -106,7 +106,7 @@ function checkPuzzle2() {
   showCorrect(usr_msg2);
   setColours(blocks, "#88ff88");
   gem_wrapper.style.display = "grid";
-  song.style.display = "inline";
+  song.style.display = "block";
   if (readCookie("quest3") != "solved_part_2") {
     gem_wrapper.scrollIntoView();
   }

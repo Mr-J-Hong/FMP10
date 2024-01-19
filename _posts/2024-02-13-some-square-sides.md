@@ -13,7 +13,7 @@ Stories of your amazing feats of mathemagical prowess at the mine have reached t
 
 The king presents you with an odd-looking [square dance](https://en.wikipedia.org/wiki/Square_dance) music box. There are some squares on the sides of the box, and on each square, there is a numbered dancer. The king tells you that only a special arrangement of the dancers, where each pair of adjacent squares sums to a square number, will open the box.
 
-Can you open the music box by arranging the squares in the correct sequence?
+Can you open the music box by rearranging the squares in the correct sequence?
 
 <div id="puzzle1" class="puzzle">
     <div class="block--isDraggable">0</div>
@@ -36,7 +36,7 @@ Can you open the music box by arranging the squares in the correct sequence?
 You've opened the music box &mdash; or at least you've made some progress. It seems that the sides of the music box have expanded and more dancers have appeared. Perhaps, if you also find the correct arrangement for these dancers, you will find your reward inside.
 </p>
 <p>
-Can you fully open the music box by arranging the squares in the correct sequence?
+Can you fully open the music box by rearranging the squares in the correct sequence?
 </p>
 <div id="puzzle2" class="puzzle">
     <div class="block--isDraggable">0</div>
