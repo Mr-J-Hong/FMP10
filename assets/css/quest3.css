@@ -3,13 +3,13 @@
 }
 
 #part2 {
-    display: block;
+    display: none;
 }
 
 .puzzle {
     cursor: grab;
     display: grid;
-    margin: auto;
+    margin: 1.2em auto 0;
     border: solid thin black;
 }
 
@@ -63,6 +63,7 @@
 .puzzle button {
     box-sizing: border-box;
     height: 100%;
+    width: 100%;
     border-radius: 0;
     padding: 0;
 }

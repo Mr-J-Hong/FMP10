@@ -32,8 +32,6 @@ const squares = new Set(Array.from({length: 10}, (x, i) => i*i));
 const part2 = document.getElementById("part2");
 const gem_wrapper = document.getElementById("gem-wrapper");
 
-// swappable1.on('drag:stopped', checkPuzzle1);
-
 let solve_status = readCookie('quest3');
 if (solve_status == 'solved_part_1') {
     part2.style.display = "block";
@@ -45,6 +43,13 @@ if (solve_status == 'solved_part_1') {
 submit1.addEventListener("click", checkPuzzle1);
 submit2.addEventListener("click", checkPuzzle2);
 
+function setColours(blocks, colour) {
+  for (let i=0; i<blocks.length; i++) {
+    if (!blocks[i].classList.contains("notDraggable")) { 
+      blocks[i].style.background = colour;
+    }
+  }
+}
 
 function checkPuzzle1() {
   const blocks = document.querySelectorAll('#puzzle1 > div'); 
@@ -57,11 +62,14 @@ function checkPuzzle1() {
     if (!squares.has(n+n1) || !squares.has(n+n2)) {
       usr_msg1.innerHTML = "Adjacent pairs must sum to a square number.";
       flashError(usr_msg1);
+      setColours(blocks, "transparent");
       return;
     }
   }
+
   usr_msg1.innerHTML = "You did it!"
   showCorrect(usr_msg1);
+  setColours(blocks, "#88ff88");
   part2.style.display = "block";
     if (readCookie("quest3") == null) {
         usr_msg1.scrollIntoView();
@@ -82,11 +90,18 @@ function checkPuzzle2() {
     if (!squares.has(n+n1) || !squares.has(n+n2)) {
       usr_msg2.innerHTML = "Adjacent pairs must sum to a square number.";
       flashError(usr_msg2);
+      setColours(blocks, "transparent");
+      for (let i=0; i<blocks.length; i++) {
+        if (!blocks[i].classList.contains("notDraggable")) { 
+          blocks[i].style.background = "transparent";
+        }
+      }
       return;
     }
   }
   usr_msg2.innerHTML = "You did it!"
   showCorrect(usr_msg2);
+  setColours(blocks, "#88ff88");
   gem_wrapper.style.display = "grid";
     if (readCookie("quest3") == null) {
         gem_wrapper.scrollIntoView();
