@@ -20,6 +20,7 @@ const submit1 = document.getElementById("submit1");
 const submit2 = document.getElementById("submit2");
 const usr_msg1 = document.getElementById("usr-msg1");
 const usr_msg2 = document.getElementById("usr-msg2");
+const song = document.getElementById("song");
 
 const adj1 = [[1,3],[0,2],[1,5],[0,6],[],[2,8],[3,7],[6,8],[5,7]];
 const adj2 = [[1,5],   [0,2],   [1,3],   [2,4],   [3,9],
@@ -38,6 +39,7 @@ if (solve_status == 'solved_part_1') {
 } else if (solve_status == 'solved_part_2') {
     part2.style.display = "block";
     gem_wrapper.style.display = "grid";
+    song.style.display = "inline";
 }
 
 submit1.addEventListener("click", checkPuzzle1);
@@ -71,12 +73,13 @@ function checkPuzzle1() {
   showCorrect(usr_msg1);
   setColours(blocks, "#88ff88");
   part2.style.display = "block";
-    if (readCookie("quest3") == null) {
-        usr_msg1.scrollIntoView();
-        if (readCookie('cookie-notice-option') == "true") {
-            createCookie("quest3", "solved_part_1", 365);
-        }
-    }
+  let solve_status = readCookie("quest3");
+  if (solve_status == null) {
+    usr_msg1.scrollIntoView();
+  }
+  if (readCookie('cookie-notice-option') == "true" && solve_status != "solved_part_2") {
+      createCookie("quest3", "solved_part_1", 365);
+  }
 }
 
 function checkPuzzle2() {
@@ -103,10 +106,11 @@ function checkPuzzle2() {
   showCorrect(usr_msg2);
   setColours(blocks, "#88ff88");
   gem_wrapper.style.display = "grid";
-    if (readCookie("quest3") == null) {
-        gem_wrapper.scrollIntoView();
-        if (readCookie('cookie-notice-option') == "true") {
-            createCookie("quest3", "solved_part_2", 365);
-        }
-    }
+  song.style.display = "inline";
+  if (readCookie("quest3") != "solved_part_2") {
+    gem_wrapper.scrollIntoView();
+  }
+  if (readCookie('cookie-notice-option') == "true") {
+      createCookie("quest3", "solved_part_2", 365);
+  }
 }

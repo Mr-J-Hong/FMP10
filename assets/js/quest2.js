@@ -116,13 +116,13 @@ function checkElevators() {
         showCorrect(elevator_feedback);
         part2.style.display = "block";
 
-        if (readCookie("quest2") == null) {
+        const solve_status = readCookie('quest2');
+        if (solve_status == null) {
             part1_end.scrollIntoView();
-            if (readCookie('cookie-notice-option') == "true") {
-                createCookie("quest2", "solved_part_1", 365);
-            }
         }
-
+        if (readCookie('cookie-notice-option') == "true" && solve_status != "solved_part_2" && solve_status != "solved_part3") {
+            createCookie("quest2", "solved_part_1", 365);
+        }
     } else if (nWrong == 1) {
         elevator_feedback.innerHTML = nWrong + " elevator is not in the correct position.";
         flashError(elevator_feedback);
@@ -149,9 +149,9 @@ function checkBombs() {
     solve_status = readCookie("quest2");
     if (solve_status != "solved_part_2" && solve_status != "solved_part_3") {
         part2_end.scrollIntoView();
-        if (readCookie('cookie-notice-option') == "true") {
-            createCookie("quest2", "solved_part_2", 365);
-        }
+    }
+    if (readCookie('cookie-notice-option') == "true" && solve_status != "solved_part_3") {
+        createCookie("quest2", "solved_part_2", 365);
     }
 }
 
@@ -163,9 +163,9 @@ function checkLocker() {
         solve_status = readCookie("quest2");
         if (solve_status != "solved_part_3") {
             gem_wrapper.scrollIntoView();
-            if (readCookie('cookie-notice-option') == "true") {
-                createCookie("quest2", "solved_part_3", 365);
-            }
+        }
+        if (readCookie('cookie-notice-option') == "true") {
+            createCookie("quest2", "solved_part_3", 365);
         }
     } else {
         flashError(locker_input);

@@ -71,3 +71,8 @@
 .usr-msg {
     margin: 0.6em auto 1.2em;
 }
+
+audio {
+    width: 100%;
+    display: none;
+}

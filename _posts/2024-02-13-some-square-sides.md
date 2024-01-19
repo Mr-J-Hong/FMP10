@@ -11,9 +11,9 @@ desmos_link: https://www.desmos.com/calculator/ejxejkil35?invertedColors=true
 
 Stories of your amazing feats of mathemagical prowess at the mine have reached the king, and he has summoned you to help him with a particularly puzzling problem.
 
-The king presents you with a beautiful music box with some squares around the sides. On each square, there is a dancer and a number indicating the dance move. The king tells you that only a special square dance sequence can open the box. In this dance sequence, each pair of adjacent squares sums to a square number.
+The king presents you with an odd-looking [square dance](https://en.wikipedia.org/wiki/Square_dance) music box. There are some squares on the sides of the box, and on each square, there is a numbered dancer. The king tells you that only a special arrangement of the dancers, where each pair of adjacent squares sums to a square number, will open the box.
 
-Can you help the king open the music box by arranging the squares in the special square dance sequence?
+Can you open the music box by arranging the dancers in the correct sequence?
 
 <div id="puzzle1" class="puzzle">
     <div class="block--isDraggable">0</div>
@@ -33,10 +33,10 @@ Can you help the king open the music box by arranging the squares in the special
 
 <div id="part2">
 <p>
-You've opened the music box &mdash; or at least you've made some progress. It seems that the sides of the music box have expanded and more dancers have appeared. Perhaps, if you arrange these dancers in the special square dance sequence, there would be another surprise inside.
+You've opened the music box &mdash; or at least you've made some progress. It seems that the sides of the music box have expanded and more dancers have appeared. Perhaps, if you also find the correct arrangement for these dancers, you would discover something special inside.
 </p>
 <p>
-Can you fully open the music box by arranging the squares in the special square dance sequence?
+Can you fully open the music box by arranging the dancers in the correct sequence?
 </p>
 <div id="puzzle2" class="puzzle">
     <div class="block--isDraggable">0</div>
@@ -56,7 +56,11 @@ Can you fully open the music box by arranging the squares in the special square 
     <div class="block--isDraggable">9</div>
     <div class="block--isDraggable">10</div>
         <div class="block notDraggable left bot"></div>
-        <div class="block notDraggable bot"></div>
+        <div class="block notDraggable bot audio-wrapper">
+            <audio controls loop id="song">
+                <source src="{{ site.baseurl }}/assets/audio/2-star bound.mp3" type="audio/mpeg">
+            </audio>
+        </div>
         <div class="block notDraggable right bot"></div>
     <div class="block--isDraggable">11</div>
     <div class="block--isDraggable">12</div>
