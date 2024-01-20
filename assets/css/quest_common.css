@@ -26,6 +26,6 @@
 .submission-wrapper {
     display: flex;
     justify-content: center;
-    column-gap: 12px;
+    column-gap: 6px;
     margin: 0.6em auto 1.2em;
 }

@@ -91,8 +91,8 @@
 }
 
 .gem-link {
-  width: 180px;
-  aspect-ratio: 1;
+  width: 180px !important;
+  aspect-ratio: 1 !important;
   display: flex;
   margin: auto;
   justify-content: center;
@@ -130,7 +130,7 @@
 .card {
   display: flex;
   margin: auto;
-  width: 192px;
+  width: 192px !important;
   aspect-ratio: 1;
   border-radius: 12px;
   background-size: 300% 300%;
