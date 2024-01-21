@@ -41,7 +41,3 @@
     justify-content: flex-start;
     column-gap: 6px;
 }
-
-.submission-wrapper button {
-    width: max-content;
-}

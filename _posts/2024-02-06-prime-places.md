@@ -38,7 +38,7 @@ The elevators have just finished their 100th run. One final run will bring all t
                 Which elevators are at the bottom after 100 runs?
             </div>
         </div>
-        <button id="check-elevators" class="noselect">Check My Answer</button>
+        <button id="check-elevators" class="noselect">Check</button>
     </div>
 </div>
 
@@ -76,7 +76,7 @@ Can you figure out which elevators might have a bomb, and which ones are safe?
                 Which elevators, other than 1, only went down once?
             </span>
         </div>
-        <button id="check-bombs" class="noselect">Check My Answer</button>
+        <button id="check-bombs" class="noselect">Check</button>
     </div>
 </div>
 </div>
@@ -118,6 +118,6 @@ Non-examples:
 </p>
 
 <div class="number-input">
-    <input id="locker-input" type="number"><button id="check-locker" class="noselect">Check My Answer</button>
+    <input id="locker-input" type="number"><button id="check-locker" class="noselect">Check</button>
 </div>
 </div>
