@@ -18,3 +18,7 @@
 #puzzle2 .buttons {
     grid-template-rows: repeat(6, 36px);
 }
+
+.submission-wrapper {
+    width: 80%;
+}
