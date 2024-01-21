@@ -80,7 +80,6 @@
 }
 
 audio {
-    width: 90%;
-    margin: auto;
+    width: 100%;
     display: none;
 }
