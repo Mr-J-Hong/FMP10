@@ -1,4 +1,4 @@
-import { flashError, showCorrect } from "./quest_common.mjs";
+import { flashError, flashFeedback, showCorrect } from "./quest_common.mjs";
 import {createCookie, readCookie} from "./cookies.mjs";
 
 const gem_wrapper = document.getElementById("gem-wrapper");
@@ -13,6 +13,7 @@ const reset_button2 = document.getElementById("reset2");
 const buttons2 = document.querySelectorAll("#puzzle2 .buttons button");
 const tot_msg2 = document.getElementById("total2");
 const pwr_req2 = document.getElementById("power_required2");
+const hint_btn = document.getElementById("hint-btn");
 
 if (readCookie('quest1') == 'solved_part_1') {
     puzzle2.style.display = "block";
@@ -30,6 +31,10 @@ reset_button2.addEventListener("click", resetButtons2);
 buttons2.forEach((currentValue, currentIndex, listObj) => {
     currentValue.addEventListener("click", handleCoinButtonClick2);
 })
+
+hint_btn.addEventListener("click", () => {
+    flashFeedback(pwr_req2, "Start with 23, 9, 15", "#88ff88");
+});
 
 let factors = []
 for (let n = 1; n <= 24; n++) {
@@ -95,6 +100,7 @@ function handleCoinButtonClick2(event) {
     const proper_factors = factors[event.target.innerText-1];
     if (proper_factors.every((n) => buttons2[n-1].disabled)) {
         if (total2 < min_score) {
+            pwr_req2.innerHTML = "Not enough power";
             flashError(tot_msg2);
             flashError(pwr_req2);
         }

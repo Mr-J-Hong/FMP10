@@ -1,6 +1,6 @@
 .usr-msg {
     transition: background-color 0.3s ease-in-out; 
-    max-width: fit-content;
+    width: fit-content;
     border: solid thin black;
     padding: 3px 0.8em 3px;
     font-size: small;
@@ -24,8 +24,24 @@
 }
 
 .submission-wrapper {
-    display: flex;
-    justify-content: center;
-    column-gap: 6px;
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    column-gap: 12px;
     margin: 0.6em auto 1.2em;
+}
+
+.submission-wrapper div.messages-wrapper {
+    display: flex;
+    column-gap: 6px;
+    justify-content: flex-end;
+}
+
+.submission-wrapper div.btns {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 6px;
+}
+
+.submission-wrapper button {
+    width: fit-content;
 }

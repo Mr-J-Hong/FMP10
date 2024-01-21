@@ -1,6 +1,6 @@
-export function flashFeedback(elem, msg) {
+export function flashFeedback(elem, msg, colour = "#fdfd96") {
     elem.innerText = msg;
-    elem.style.background = "#fdfd96";
+    elem.style.background = colour;
     setTimeout(() => {
         elem.style.background = "transparent"; 
     }, 300);

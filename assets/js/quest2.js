@@ -136,14 +136,14 @@ function checkBombs() {
     for (let i=0; i < elevators2.length; i++) {
         if ((primes.has(i+1) && elevators2[i].className != "bomb")
             || (!primes.has(i+1) && elevators2[i].className != "safe")) {
-                elevator2_feedback.innerHTML = "Please try again."
+                elevator2_feedback.innerHTML = "That's not quite right. Please try again."
                 flashError(elevator2_feedback);
                 return
         }
     }
 
     showCorrect(elevator2_feedback);
-    elevator2_feedback.innerHTML = "You did it!"
+    elevator2_feedback.innerHTML = "Congratulations, you did it!"
     part3.style.display = "grid";
 
     solve_status = readCookie("quest2");
