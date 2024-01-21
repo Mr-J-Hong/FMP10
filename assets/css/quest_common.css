@@ -26,18 +26,18 @@
 .submission-wrapper {
     display: grid;
     grid-template-columns: auto min-content;
-    column-gap: 12px;
+    column-gap: 6px;
     margin: 0.6em auto 1.2em;
 }
 
 .submission-wrapper div.messages-wrapper {
     display: flex;
-    column-gap: 6px;
+    column-gap: 3px;
     justify-content: flex-end;
 }
 
 .submission-wrapper div.btns {
     display: flex;
     justify-content: flex-start;
-    column-gap: 6px;
+    column-gap: 3px;
 }
