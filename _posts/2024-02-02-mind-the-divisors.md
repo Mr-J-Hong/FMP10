@@ -71,7 +71,7 @@ Great job! You've activated the portal. Stepping through, you find a big box wit
             <div id="total2" class="usr-msg total">Total Power: 0</div>
             <div id="power_required2" class="usr-msg">Not enough power</div>
         </div>
-        <div class="btns">
+        <div class="btns-wrapper">
             <button id="reset2">Reset</button>
             <button id="hint-btn">Hint</button>
         </div>

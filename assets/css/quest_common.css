@@ -36,8 +36,3 @@
     justify-content: flex-end;
 }
 
-.submission-wrapper div.btns {
-    display: flex;
-    justify-content: flex-start;
-    column-gap: 3px;
-}

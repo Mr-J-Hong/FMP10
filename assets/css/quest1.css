@@ -22,3 +22,9 @@
 .submission-wrapper {
     width: 80%;
 }
+
+.submission-wrapper div.btns-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 2px;
+}
