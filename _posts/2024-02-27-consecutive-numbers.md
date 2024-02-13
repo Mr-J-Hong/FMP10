@@ -1,4 +1,4 @@
 ---
 layout: page
-title:  "4. Consecutive Numbers"
+title:  "4. Culminating Consecutive Counting Numbers"
 ---
