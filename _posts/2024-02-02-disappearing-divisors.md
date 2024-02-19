@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  1. Dealing With Divisors
+title:  1. Disappearing Divisors
 custom_js: quest1
 custom_css: 
  - quest_common

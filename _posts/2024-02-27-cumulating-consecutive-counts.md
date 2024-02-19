@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "4. Counting Consecutively"
+title:  "4. Cumulating Consecutive Counts"
 custom_js: quest4
 custom_css:
  - quest_common
