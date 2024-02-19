@@ -31,19 +31,19 @@ Can you help the CSA hack the martian spaceship by finding the correct starting 
     </thead>
     <tbody>
         <tr id="tr1">
-            <td><input id="input1" type="number" min="1" value="1"></td>
+            <td><input id="input1" type="number" min="1" value="1" inputmode="numeric"></td>
             <td><br></td>
             <td id="sum1"></td>
             <td class="series" id="series1"></td>
         </tr>
         <tr id="tr2">
-            <td><input id="input2" type="number" min="1" value="1"></td>
+            <td><input id="input2" type="number" min="1" value="1" inputmode="numeric"></td>
             <td></td>
             <td id="sum2"></td>
             <td class="series" id="series2"></td>
         </tr>
         <tr id="tr3">
-            <td><input id="input3" type="number" min="1" value="1"></td>
+            <td><input id="input3" type="number" min="1" value="1" inputmode="numeric"></td>
             <td></td>
             <td id="sum3"></td>
             <td class="series" id="series3"></td>
