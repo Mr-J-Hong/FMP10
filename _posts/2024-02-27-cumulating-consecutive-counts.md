@@ -6,16 +6,16 @@ custom_css:
  - quest_common
  - quest4
 gem_img: gem4.png
-desmos_link: https://www.desmos.com/3d/76c4342033?invertedColors=true
+desmos_link: https://www.desmos.com/3d/c5009e0bf2?invertedColors=true
 ---
 
 The king is overjoyed that his music box is working once more and promises to invite you to his next square dance party. 
 
 In the mean time, you still have get the rest of the mathemagical gems. The rumour is that the [Canadian Space Agency](https://www.asc-csa.gc.ca/eng/) (CSA) has located one of the gems on Mars. Even better, it is believed that they have recovered a secret martian spaceship that could be used to get to Mars.
 
-Upon arriving at the CSA, you are immediately recognized for your previous mathemagical exploits and ushered into the secret lab, where mathematicians are busy trying to hack into the spaceship's user interface. To succeed, the sum of consecutive numbers from the starting number must reach the target exactly. But be careful, the targets change each time you reset the hacking device.
+Upon arriving at the CSA, you are immediately recognized for your previous mathemagical exploits and ushered into the secret lab, where mathematicians are busy hacking into the spaceship's user interface. In order to gain access, the sum of consecutive numbers starting from the chosen number must reach the target exactly. But be careful, the targets change each time you reset the hacking device!
 
-Can you help the CSA hack the martian spaceship by finding the correct starting number for all three targets?
+Can you help the CSA hack into the martian spaceship by finding the starting number for all three targets?
 
 <br>
 
@@ -56,7 +56,7 @@ Can you help the CSA hack the martian spaceship by finding the correct starting 
     <div class="submission-wrapper">
         <div class="messages-wrapper">
             <span class="usr-msg">
-                <strong>Start</strong> must be a whole number less than <strong>Target</strong>.
+                <strong>Start</strong> must be a positive integer less than <strong>Target</strong>.
             </span>
         </div>
         <button id="add_btn">Add</button>
