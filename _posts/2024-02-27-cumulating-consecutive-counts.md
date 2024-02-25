@@ -13,7 +13,7 @@ The king is overjoyed that his music box is working once more and promises to in
 
 In the mean time, you still have get the rest of the mathemagical gems. The rumour is that the [Canadian Space Agency](https://www.asc-csa.gc.ca/eng/) (CSA) has located one of the gems on Mars. Even better, it is believed that they have recovered a secret martian spaceship that could be used to get to Mars.
 
-Upon arriving at the CSA, you are immediately recognized for your previous mathemagical exploits and ushered into the secret lab, where mathematicians are busy hacking into the spaceship's user interface. 
+Upon arriving at the CSA, you are immediately recognized for your previous mathemagical exploits and ushered into the secret lab, where mathematicians are busy hacking into the spaceship's user interface. The first challenge is to find which starting numbers will lead to a series of consecutive numbers that sum exactly to 21.
 
 <br>
 
