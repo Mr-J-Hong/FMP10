@@ -1,3 +1,7 @@
+#part2 {
+    display: none;
+}
+
 .table_component {
     overflow: auto;
     width: 100%;
