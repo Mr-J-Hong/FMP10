@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: A Mathemagical Adventure Through Foundations of Mathematics and Pre-calculus 10
+title: A Mathemagical Adventure
 author: Jack Hong
 email: jhong@sd38.bc.ca
 baseurl: "/FMP10" # the subpath of your site, e.g. /blog

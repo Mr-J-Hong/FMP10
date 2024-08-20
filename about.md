@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is an optional story quest for Mr. Hong's Foundations of Mathematics and Pre-calculus 10 class at [Hugh McRoberts Secondary School](https://mcroberts.sd38.bc.ca/).
+This is an optional story quest for Mr. Hong's math classes at [Hugh McRoberts Secondary School](https://mcroberts.sd38.bc.ca/).
 <br><br>
-Your goal is to learn the secret to awesome mathemagical powers by solving the puzzles in each quest and collecting the 12 *mathemagical gems*. You will need to use all the gems together to decode the message at the end of the course.
+Your goal is to learn the secret to awesome mathemagical powers by solving the puzzles in each quest and collecting the 5 *mathemagical gems*. You will need to use all the gems together to decode the secret message.
 <br><br>
 You can enable cookies to save your progress on your device for one year. The cookies policy can be found [here](/cookies.md).
 <br><br>
