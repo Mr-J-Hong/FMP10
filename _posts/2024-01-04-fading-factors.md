@@ -1,15 +1,15 @@
 ---
 layout: page
-title:  1. Disappearing Divisors
-custom_js: quest1
+title:  Fading Factors
+custom_js: quest4
 custom_css: 
  - quest_common
- - quest1
-gem_img: gem1.png
-desmos_link: https://www.desmos.com/3d/3c155ae977?invertedColors=true
+ - quest4
+gem_img: icosahedron.png
+desmos_link: https://www.desmos.com/3d/ltlovznhr0?invertedColors=true
 ---
 
-According to the colorful [canaries](https://www.smithsonianmag.com/smart-news/story-real-canary-coal-mine-180961570/), the first gem can be found in the [deepest mine in the world](https://www.mining-technology.com/features/feature-top-ten-deepest-mines-world-south-africa/?cf-view).
+According to the colorful [canaries](https://www.smithsonianmag.com/smart-news/story-real-canary-coal-mine-180961570/), a gem can be found in the [deepest mine in the world](https://www.mining-technology.com/features/feature-top-ten-deepest-mines-world-south-africa/?cf-view).
 
 You grab your hardy hard hat and head down to investigate (leaving the canaries to enjoy the fresh air at the park, of course). Following the trail of magic, you soon find yourself in front of a powered-down portal with a keypad next to it. Can you figure out how the buttons work and activate the portal?
 

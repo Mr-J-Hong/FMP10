@@ -1,12 +1,12 @@
 ---
 layout: page
-title:  3. Some Square Sides
+title:  Some Squares
 custom_js: quest3
 custom_css:
  - quest_common
  - quest3
-gem_img: gem3.png
-desmos_link: https://www.desmos.com/calculator/ejxejkil35?invertedColors=true
+gem_img: cube.png
+desmos_link: https://www.desmos.com/3d/cgsvm9shky?invertedColors=true
 ---
 
 Stories of your amazing feats of mathemagical prowess at the mine have reached the king, and he has summoned you to help him with a particularly puzzling problem. In return, the king has promised you a mathemagical gem.

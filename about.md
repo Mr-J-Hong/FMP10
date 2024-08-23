@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is an optional story quest for Mr. Hong's math classes at [Hugh McRoberts Secondary School](https://mcroberts.sd38.bc.ca/).
+This is a fun story quest created by Jack Hong to help his students explore some interesting [recreational mathematics](https://en.wikipedia.org/wiki/Recreational_mathematics) puzzles.
 <br><br>
-Your goal is to learn the secret to awesome mathemagical powers by solving the puzzles in each quest and collecting the 5 *mathemagical gems*. You will need to use all the gems together to decode the secret message.
+The goal is to learn the secret to awesome mathemagical powers by solving the puzzles in each quest and collecting the 5 *mathemagical gems*. You will need to use all of the gems together to decode the secret message on the home page.
 <br><br>
 You can enable cookies to save your progress on your device for one year. The cookies policy can be found [here](/cookies.md).
 <br><br>

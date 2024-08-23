@@ -16,7 +16,8 @@
   .post-link {
     color: $text-color;
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: center;
+    // flex-direction: column-reverse;
     text-decoration: none;
     padding: .1em 12px .1em;
     transition: opacity .125s ease-in-out;
@@ -24,14 +25,13 @@
     &:focus {
       opacity: 1 !important;
     }
-    @media (min-width: $on-tablet) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      .post-date {
-        margin-left: auto;
-      }
-    }
+    // @media (min-width: $on-tablet) {
+    //   display: flex;
+    //   flex-direction: row;
+    //   .post-date {
+    //     margin-left: auto;
+    //   }
+    // }
   }
   
   .post-link__heading {

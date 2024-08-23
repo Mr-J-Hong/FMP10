@@ -1,0 +1,61 @@
+#gem-wrapper {
+    display: none;
+}
+
+#part2 {
+    display: none;
+}
+
+#part3 {
+    display: none;
+}
+
+.elevators {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    font-family: 'Roboto Mono', monospace;
+    font-size: small;
+    margin: 0 auto 0;
+}
+
+.elevators button {
+    height: 24px;
+}
+
+button.top {
+    background-color: skyblue;
+    color: black;
+}
+
+button.bot {
+    background-color: black;
+    color: white;
+}
+
+.bomb {
+    background-color: #da0e0e;
+    color: white;
+}
+
+.set-bombs {
+    height: 24px;
+}
+
+.safe {
+    background-color: #88ff88;
+    color: black;
+}
+
+.legend {
+    margin: 0;
+}
+
+.note {
+    max-width: 80%;
+    border: solid thin black;
+    padding: 0.6em;
+    font-family: 'Caveat', cursive;
+    margin: 0.6em auto 0.6em;
+}
+
