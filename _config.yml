@@ -21,7 +21,7 @@
 title: Quests for the Mathemagical Gems
 author: Jack Hong
 email: jhong@sd38.bc.ca
-baseurl: "/FMP10" # the subpath of your site, e.g. /blog
+baseurl: "/MathemagicalGems" # the subpath of your site, e.g. /blog
 url: "https://mr-j-hong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mr-j-hong
 
