@@ -4,14 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is a fun story quest created by Mr. Hong at [McRoberts Secondary](https://mcroberts.sd38.bc.ca/) during his free time to help his students explore some interesting [recreational mathematics](https://en.wikipedia.org/wiki/Recreational_mathematics).
-<br><br>
-The goal is to learn the secret to awesome mathemagical powers by solving the puzzles in each quest and collecting the 5 *mathemagical gems*. You will need to use all of the gems together to decode the secret message on the home page.
+This website was created by Mr. Hong at [McRoberts Secondary](https://mcroberts.sd38.bc.ca/) to help his students explore some fun [recreational mathematics](https://en.wikipedia.org/wiki/Recreational_mathematics).
 <br><br>
 You can enable cookies to save your progress on your device for one year. The cookies policy can be found [here](/cookies.md).
 <br><br>
-You can also write down your answer to the final puzzle of each quest and re-enter them when you want to see the gems again.
+You can also retrieve each gem by entering the answer to the final puzzle of each quest on the [gems](/gems.md) page.
 <br><br>
-This project is open source. You can help improve it [here](https://github.com/Mr-J-Hong/FMP10).
+This project is open source. You can help improve it [here](https://github.com/Mr-J-Hong/MathemagicalGems).
 <br><br>
 Have fun!

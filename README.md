@@ -1,3 +1,3 @@
-Created by Mr. Hong  
+Created by Jack Hong  
 
-A Mathemagical Adventure
+Quests for the Mathemagical Gems

@@ -121,7 +121,7 @@ figcaption {
 .home {
   max-width: 24em;
   margin: auto;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .content-title {
@@ -142,13 +142,16 @@ figcaption {
 }
 
 .secret {
+  display: block;
   border: dashed 2px black;
   background-color: transparent;
   color: white;
   max-width: 24em;
-  margin: 2em auto; 
+  margin: 1.5em auto; 
   padding: 1em;
   transition: background-color 1s linear;
+  text-decoration: none;
+  text-align: center;
 }
 
 .secret em {
