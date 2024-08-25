@@ -154,3 +154,42 @@
     background-position: 100% 50%;
   }
 }
+
+.circle-main {
+  position: relative;
+  border: 0px dotted #000000;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 5em;
+}
+
+.circle {
+  position: absolute;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+  height: 100px;
+  width: 100px;
+  // border: 1px dotted #000000;
+  // border-radius: 50%;
+}
+
+.circle:nth-child(1) {
+  transform: translateX(250px);
+}
+
+.circle:nth-child(2) {
+  transform: rotate(72deg) translateX(250px);
+}
+
+.circle:nth-child(3) {
+  transform: rotate(144deg) translateX(250px);
+}
+
+.circle:nth-child(4) {
+  transform: rotate(216deg) translateX(250px);
+}
+
+.circle:nth-child(5) {
+  transform: rotate(288deg) translateX(250px);
+}
