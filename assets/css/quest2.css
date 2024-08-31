@@ -1,3 +1,35 @@
 #gem-wrapper {
     display: block;
 }
+
+#digit-cards {
+    display: grid;
+    margin: 1em auto 0;
+    align-items: center;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#digit-cards > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid thin black;
+    aspect-ratio: 0.707;
+}
+
+.grabbable {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.grabbable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.usr-msg {
+    margin: 1em auto 3em;
+}

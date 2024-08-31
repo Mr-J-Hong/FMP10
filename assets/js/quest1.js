@@ -1,5 +1,5 @@
 import { flashError, showCorrect } from "./quest_common.mjs";
-import {createCookie, readCookie} from "./cookies.mjs";
+import { createCookie, readCookie } from "./cookies.mjs";
 
 const part1_input = document.getElementById("part1_input");
 const part1_check = document.getElementById("part1_check");
@@ -72,7 +72,6 @@ reset_btn.addEventListener("click", () => {
 })
 
 part1_check.addEventListener("click", () => {
-    // Well, well, well, aren't you a smart cookie?
     if (part1_input.value == "17") {
         part2.style.display = "block";
         showCorrect(part1_input);

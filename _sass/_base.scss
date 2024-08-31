@@ -141,39 +141,40 @@ figcaption {
   }
 }
 
-.secret {
+.intro {
   display: block;
   border: dashed 2px black;
-  background-color: transparent;
-  color: white;
+  background-color: white;
+  // background-color: transparent;
+  // color: white;
   max-width: 24em;
   margin: 1.5em auto; 
   padding: 1em;
-  transition: background-color 1s linear;
+  // transition: background-color 1s linear;
   text-decoration: none;
   text-align: center;
 }
 
-.secret em {
+.intro em {
   color: white;
 }
 
-.secret:hover {
-  background-color: #1b3c1f;
-  transition: background-color 1s linear;
-}
+// .secret:hover {
+  // background-color: #1b3c1f;
+  // transition: background-color 1s linear;
+// }
 
-.secret p {
-  visibility: hidden;
-  opacity: 0%;
-  transition: visibility 0s linear 1s, opacity 1s linear;
-}
+// .secret p {
+//   visibility: hidden;
+//   opacity: 0%;
+//   transition: visibility 0s linear 1s, opacity 1s linear;
+// }
 
-.secret:hover p {
-  visibility: visible;
-  opacity: 100%;
-  transition-delay: 0s;
-}
+// .secret:hover p {
+//   visibility: visible;
+//   opacity: 100%;
+//   transition-delay: 0s;
+// }
 
 .site-credits {
   margin: 0 auto 2em;
