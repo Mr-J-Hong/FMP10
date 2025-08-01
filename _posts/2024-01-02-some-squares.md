@@ -1,14 +1,15 @@
 ---
 layout: page
 title:  Some Squares
-custom_js: quest3
+custom_js: quest2
 custom_css:
  - quest_common
- - quest3
+ - quest2
 gem_img: cube.png
 desmos_link: https://www.desmos.com/3d/cgsvm9shky?invertedColors=true
 ---
 
+Pythagoras
 Stories of your amazing feats of mathemagical prowess at the mine have reached the king, and he has summoned you to help him with a particularly puzzling problem. In return, the king has promised you a mathemagical gem.
 
 The king presents you with an odd-looking [square dance](https://en.wikipedia.org/wiki/Square_dance) music box. There are some squares on the sides of the box, and on each square, there is a numbered dancer. The king tells you that only a special arrangement of the dancers, where each pair of adjacent squares sums to a square number, will open the box.

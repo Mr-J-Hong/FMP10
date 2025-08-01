@@ -1,85 +1,35 @@
 #gem-wrapper {
-    display: none;
+    display: block;
 }
 
-#part2 {
-    display: none;
-}
-
-.puzzle {
-    cursor: grab;
+#digit-cards {
     display: grid;
-    margin: 1.2em auto 0;
-    border: solid thin black;
+    margin: 1em auto 0;
     align-items: center;
+    grid-template-columns: repeat(10, 1fr);
 }
 
-#puzzle1 {
-    max-width: 42%;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-#puzzle2 {
-    max-width: 70%;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.puzzle > .notDraggable {
-    display: flex;
-    align-items: center;
-    cursor: default;
-    overflow: hidden;
-    border: none;
-}
-
-.puzzle > .top {
-    box-sizing: border-box;
-    border-top: solid thin black;
-}
-
-.puzzle > .left {
-    box-sizing: border-box;
-    border-left: solid thin black;
-}
-
-.puzzle > .right {
-    box-sizing: border-box;
-    border-right: solid thin black;
-}
-
-.puzzle > .bot {
-    box-sizing: border-box;
-    border-bottom: solid thin black;
-}
-
-.puzzle > div {
+#digit-cards > div {
     display: flex;
     justify-content: center;
     align-items: center;
     border: solid thin black;
-    aspect-ratio: 1;
-    /* background-color: #cecece; */
+    aspect-ratio: 0.707;
 }
 
-.puzzle button {
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
-    padding: 0;
+.grabbable {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.grabbable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
 }
 
 .usr-msg {
-    margin: 0.6em auto 1.2em;
-}
-
-.audio-wrapper {
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-audio {
-    width: 100%;
-    display: none;
+    margin: 1em auto 3em;
 }

@@ -9,9 +9,7 @@ gem_img: tetrahedron.png
 desmos_link: https://www.desmos.com/3d/skbyuxc7oi?invertedColors=true
 ---
 
-The rumour is that the [Canadian Space Agency](https://www.asc-csa.gc.ca/eng/) (CSA) has located one of the *mathemagical gems* on Mars. Even better, it is believed that they have recovered a secret martian spaceship that could be used to get to there.
-
-Upon arriving at the CSA, you are immediately recognized for your skills and ushered into the secret lab, where mathematicians are busy hacking into the spaceship's user interface. The first challenge is to find which starting numbers will lead to a series of consecutive numbers that sum exactly to 21.
+Gauss
 
 <br>
 

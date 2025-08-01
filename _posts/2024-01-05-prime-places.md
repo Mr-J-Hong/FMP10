@@ -9,7 +9,7 @@ gem_img: dodecahedron.png
 desmos_link: https://www.desmos.com/3d/t0uzm30wpv?invertedColors=true
 ---
 
-The elevators are about to make their last run of the day and you are still stuck at the bottom of the mine. 
+Eratosthenes
 
 There are 100 elevators that run on a rather peculiar schedule, and you need to figure out which ones you might be able to take. At the start of each day, all the elevators are at the top. On the first run, all the elevators go down to the bottom. On the second run, every second elevator goes back up to the top. On the third run, every third elevator makes a run, so those at the top go down and those at the bottom go up. This pattern continues for 100 runs.
 
